@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.body{
+    height: 100vh;
+    align-items: center;
+    /* background-color: var(--background-color); */
+    padding: 0.3rem;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: none;
+    background-color: rgb(213, 213, 63);
+   
+}
+
+.nav{
+    width: 100vw;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header1{
+    width: 100vw;
+    min-height: 200px;
+    background-color: #FDBE33;
+    display: flex;
+    justify-content:space-between;
+    gap: 2rem;
+    align-items: center;
+    position: fixed;
+
+}
+
+.icon-logo{
+    margin-left: 5rem; 
+    font-weight: bold;
+    padding-right: 7rem;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.span_container1{
+    font-size: 0.9rem;
+    font-weight: bold; 
+    
+}
+
+
+.span_container2{
+    font-size: 0.9rem;
+    font-weight: bold;   
+}
+
+
+.span_container3{
+    font-size: 0.9rem;
+    font-weight: bold;   
+}
+
+
+.span_container4{
+    font-size: 0.9rem;
+    font-weight: bold;  
+   
+
+}
+
+.icon_container1{
+    
+    height: 2rem;
+    width: 2rem;
+    margin-left: 1rem;
+    
+}
+
+.icon_container2{
+    
+    height: 1.6rem;
+    width: 1.6rem;
+    margin-left: 2rem;
+    
+}
+
+.icon_container3{
+    
+    height: 1.6rem;
+    width: 1.6rem;
+   
+    
+}
+
+.icon_container4{
+    
+    height: 1.9rem;
+    width: 1.9rem;
+   
+    
+}
+
+
+
+.header2{
+    display: flex;
+    
+    flex-direction: row;
+    width: 85vw;
+    min-height: 60px;
+    background-color:#030F27;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+    left: 5%;
+    right: 5%;
+    
+}
+
+.nav2{
+  
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    top: 2rem;
+    
+}
+
+.h2{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.h2:hover{
+    color: rgb(116, 116, 248);
+}
+
+.logo-png{
+    padding-right: 3rem;
+    height:2.6rem;
+    width: 18rem;
+    margin-left: 1rem;
+    
+}
+
+.hero-img{
+    height: 82vh;
+    width: 100vw;
+    position: fixed;
+}
+
+.name{
+   color: white;
+}
+
+.name2{
+    color: #FDBE33;
+}
+
+.text-overlay{
+    position: absolute;
+    top: 45%;  /* Adjust the position of the text */
+    left: 8%;
+    transform: translate(-50%, -50%);
+    color: white;  /* Text color */
+    font-size: 3.2rem;  /* Adjust the font size */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+} 
+.para1{
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+
+.text-overlay{
+        text-align: left;
+        animation: slideFromLeft 1s ease forwards;
+        opacity: 0;
+        animation-name: slideFromLeft;
+    
+       
+}    
+    
+    @keyframes slideFromLeft {
+        0%{
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+    
+        100%{
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
+.button-group{
+        display: flex;
+        gap: 2rem;
+        padding: 1rem;
+        margin-top: 1 rem;
+        align-items: center;
+        justify-content: center;
+ }
+
+ 
+.Contact-button{
+    
+    border: none;
+    border-radius: 0.5rem;
+    background-color:#030F27 ;
+    color: white;
+    transform: all 0.1s;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    
+}
+
+.About-button{
+    border: none;
+    border-radius: 0.5rem;
+    background-color:  #FDBE33;
+    color: white;
+    transform: all 0.1s;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.Contact-button{
+    background-color:#030F27 ;
+}
+
+.About-button:hover{
+    background-color: #20229a;
+}
+
+.Contact-button:hover{
+    background-color: #20229a;
+}
+
+.button-group{
+    justify-content: start;
+    padding-left: 0;
+    text-decoration: none;
+}
