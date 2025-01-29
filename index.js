@@ -18,4 +18,4 @@ app.get("/profile/:username", function(req, res){
     res.send(`Name is, ${req.params.username}`);
 })
 
-app.listen(3000, ()=>{console.log("Running at localhost:3000")});
+app.listen(3000, ()=>{console.log("Running at http://localhost:3000")});
